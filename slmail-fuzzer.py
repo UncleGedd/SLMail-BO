@@ -6,9 +6,6 @@ RPORT = 110 # pop3
 READ_BUF_SIZE = 1024
 MAX_BUF_SIZE = 3000
 
-# use pattern_create/offset located at: cd /opt/metasploit-framework/embedded/framework/tools/exploit/
-# ./pattern_create -l 100000 
-
 def receive_response(opt=False):
     if (opt == 'v'): # verbose
         print(s.recv(READ_BUF_SIZE).decode('utf-8'))
